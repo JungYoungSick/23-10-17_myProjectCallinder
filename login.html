@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* 백그라운드 설정. */
+    #root {
+      width: 100vw;
+      height: 100vh;
+      background-color: greenyellow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    #root>div:nth-child(1){
+      width: 20vw;
+      height: 20vh;
+      background-color: azure;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-right: 20vw;
+    }
+    #root>div:nth-child(2) {
+      width: 20vw;
+      height: 40vh;
+      background-color: aqua;
+    }
+    /* input{} */
+    /* label{} */
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div>
+      <div>
+        <label for="ID">ID</label>
+        <input type="text" id="ID">
+      </div>
+      <div>
+      <label for="PassWord">PW
+      <input type="text" id="passWord">
+    </div>
+    <button>login</button>
+    </div>
+    <!-- login input -->
+    <div></div>
+    <!-- img box -->
+  </div>
+</body>
+</html>
