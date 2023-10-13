@@ -53,16 +53,22 @@
       margin: 1vw;
     }
 
-    /* #root {
+    #main-mid {
       width: 100vw;
       height: 90vh;
       background-color: azure;
+      display: flex;
     }
-    #root>div:nth-child(1){
-      width: 100vw;
+    #main-mid>div:nth-child(1){
+      width: 80vw;
       height: 40vh;
       background-color: blue;
-    } */
+    }
+    #main-mid>div:nth-child(2){
+      width: 20vw;
+      height: 40vh;
+      background-color: blueviolet;
+    }
   </style>
 </head>
 <body>
@@ -77,9 +83,11 @@
       <div></div>
     </div>
     <!-- main-top -->
-    <div id="root">
+    <div id="main-mid">
+      <div></div>
       <div></div>
     </div>
+    <!-- main-mid -->
   </div>  
   <script>
 
