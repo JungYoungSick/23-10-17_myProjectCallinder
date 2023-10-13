@@ -7,54 +7,66 @@
   <!-- <link href="Main.CSS" rel="stylesheet" /> -->
   <style>
     *{margin: 0; padding: 0; box-sizing: border-box;}
-    #root{
+    #main-top{
       width: 100vw;
       height: 100vh;
       background-color: antiquewhite;
       
       display: flex;
+      flex-wrap: wrap;
     }
-    #root>div:nth-child(1) {
+    #main-top>div:nth-child(1) {
       width: 10vw;
       height: 10vw;
       background-color: khaki;
     }
-    #root>div:nth-child(2) {
+    #main-top>div:nth-child(2) {
       width: 90vw;
       height: 10vw;
       background-color: aquamarine;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: start;
     }
-    #root>div:nth-child(2)>div:nth-child(1) {
-      width: 20vw;
+    #main-top>div:nth-child(2)>div:nth-child(1) {
+      width: 15vw;
       height: 8vw;
       background-color: red;
       margin: 1vw;
     }
-    #root>div:nth-child(2)>div:nth-child(2) {
-      width: 20vw;
+    #main-top>div:nth-child(2)>div:nth-child(2) {
+      width: 15vw;
       height: 8vw;
       background-color: red;
       margin: 1vw;
     }
-    #root>div:nth-child(2)>div:nth-child(3) {
-      width: 20vw;
+    #main-top>div:nth-child(2)>div:nth-child(3) {
+      width: 15vw;
       height: 8vw;
       background-color: red;
       margin: 1vw;
     }
-    #root>div:nth-child(2)>div:nth-child(4) {
-      width: 20vw;
+    #main-top>div:nth-child(2)>div:nth-child(4) {
+      width: 15vw;
       height: 8vw;
       background-color: red;
       margin: 1vw;
     }
+
+    /* #root {
+      width: 100vw;
+      height: 90vh;
+      background-color: azure;
+    }
+    #root>div:nth-child(1){
+      width: 100vw;
+      height: 40vh;
+      background-color: blue;
+    } */
   </style>
 </head>
 <body>
-  <div id="root">
+  <div id="main-top">
     <div>
       <div></div>
     </div>
@@ -62,6 +74,10 @@
       <div></div>
       <div></div>
       <div></div>
+      <div></div>
+    </div>
+    <!-- main-top -->
+    <div id="root">
       <div></div>
     </div>
   </div>  
