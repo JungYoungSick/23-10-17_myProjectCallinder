@@ -1,6 +1,6 @@
 const http = require('http');
 const fs = require('fs')
-const HTMLTemplate = require('./model/HTML-model')
+const HTMLTemplate = require('/Users/ms/Desktop/VSCODE/my_project_callinder-1/server.js')
 
 const contentType = {'contentType' : 'text/html; charset=utf-8'};
 
@@ -20,8 +20,8 @@ http.createServer(function(req, res) {
     res.writeHead(404, contentType);
     res.end("<h1>해당 페이지를 찾을 수 없습니다.</h1>")
   }
-})
-server.listen(8080); 
+}).listen(8080);
+
 
 // let Main = {}
 // let sub = {}
