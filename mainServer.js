@@ -23,7 +23,7 @@ http.createServer(function(req, res) {
     res.writeHead(404, contentType);
     res.end("<h1>해당 페이지를 찾을 수 없습니다.</h1>")
   }
-}).listen(8080);
+}).listen(7070);
 
 
 // let Main = {}
