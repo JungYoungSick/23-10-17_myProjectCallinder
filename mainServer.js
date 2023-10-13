@@ -16,13 +16,7 @@ http.createServer(function(req, res) {
     
     } else {
       res.end(data)
-      fs.readFile('./Mainpage/Main.CSS',(err,data) => {
-      if(err) {
-        console.log('CSS를 불러올 수 없습니다.')
-      } else {
-        res.end(data)
-      }
-      });
+      
     }
   })
   
@@ -30,7 +24,8 @@ http.createServer(function(req, res) {
     res.writeHead(404, contentType);
     res.end("<h1>해당 페이지를 찾을 수 없습니다.</h1>")
   }
-}).listen(7070);
+}
+).listen(7070);
 
 
 // let Main = {}
