@@ -1,5 +1,6 @@
 const http = require('http');
 const fs = require('fs')
+const url = require('url')
 const HTMLTemplate = require('/Users/ms/Desktop/VSCODE/my_project_callinder-1/mainServer.js')
 
 const contentType = {'contentType' : 'text/html; charset=utf-8'};
@@ -16,9 +17,21 @@ http.createServer(function(req, res) {
     
     } else {
       res.end(data)
-      
-    }
-  })
+    }})}
+    if (req.url === '/main.css') {
+      fs.readFile('/Mainpage/Main.css', (err, data) => {
+        if (err) {
+          res.writeHead(404, { 'Content-Type': 'text/plain' });
+          res.write('404 Not Found');
+          return res.end();
+        }
+        res.writeHead(200, { 'Content-Type': 'text/css' });
+        res.write(data);
+        return res.end();
+      });
+      // 해당 코드는 CSS가 적용이 되지 않아 작성한 IF문이다.
+      // 작성을 했음에도 불구하고 CSS가 적용되지 않았다.
+      // 서버에 대해 좀더 알아 봐야 겠다.
   
 } else {
     res.writeHead(404, contentType);
