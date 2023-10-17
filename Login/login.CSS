@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 백그라운드 설정. */
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: greenyellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#root>div:nth-child(1){
+  width: 20vw;
+  height: 20vh;
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 20vw;
+}
+#root>div:nth-child(2) {
+  width: 20vw;
+  height: 40vh;
+  background-color: aqua;
+}
+/* input{} */
+/* label{} */
